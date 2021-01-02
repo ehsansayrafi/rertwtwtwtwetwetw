@@ -26,7 +26,7 @@ client.on('message', message => {
 		    	numbers: true
    			});
 			message.author.send("https://discord.gift/" + password); //Channel ID
-			message.reply("Sent 1 links privately!");
+			message.reply("پیوی رو چک کن که ایشالله خبرا خوب توراهه 😉");
 		 	i++;
 		}
 	}
