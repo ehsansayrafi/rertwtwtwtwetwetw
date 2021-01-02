@@ -17,6 +17,11 @@ var channel = client.channels.get('682015187947225097');
 });
 */
 
+client.on('ready', () => {
+ client.user.setActivity("!Nitro");
+ console.log("Bot ("+client.user.tag+") Ready!");
+ });
+
 client.on('message', message => {
 	if (message.content === "!nitro") {
   		var i = 0;
