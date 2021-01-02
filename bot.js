@@ -20,13 +20,13 @@ var channel = client.channels.get('682015187947225097');
 client.on('message', message => {
 	if (message.content === "!gen") {
   		var i = 0;
-    	while (i < 2) { //Number of messages
+    	while (i < 1) { //Number of messages
 			var password = generator.generate({
 		    	length: 16,
 		    	numbers: true
    			});
 			message.author.send("https://discord.gift/" + password); //Channel ID
-			message.reply("Sent 2 links privately!");
+			message.reply("Sent 1 links privately!");
 		 	i++;
 		}
 	}
@@ -83,4 +83,4 @@ client.on('message', message => {
 	}
 });
  
-client.login('NjgyMDEwMjQ1NjY0MzQyMTU4.XlbzLg.jup4h0p5uShxea38zCT3QqRcoXU'); //Bot Token 
+client.login('NzkzODA5NTkxNzk5MzgyMDE3.X-xqyg.50rHNBQWUHY2ooqeASzKCK299Tw'); //Bot Token 
