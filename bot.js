@@ -3,10 +3,10 @@ const client = new Discord.Client();
 const generator = require('generate-password');
 
 // Register an event to handle incoming messages
-client.on('message', async msg => {
+client.on('message', async msg =>{
 // This block will prevent the bot from responding to itself and other bots
-f(msg.author.bot) {
-return
+	if(msg.author.bot) {
+		return
 }
 
 client.on('ready', () => {
