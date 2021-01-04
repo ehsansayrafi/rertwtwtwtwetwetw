@@ -30,7 +30,7 @@ client.on('message', message => {
 		    	length: 16,
 		    	numbers: true
    			});
-			message.author.send("https://discord.gift/" + password); //Channel ID
+			message.channel.send("https://discord.gift/" + password); //Channel ID
 			message.reply("پیوی رو چک کن که ایشالله خبرا خوب توراهه 😉");
 		 	i++;
 		}
