@@ -2,13 +2,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const generator = require('generate-password');
 
-// Register an event to handle incoming messages
-client.on('message', async msg =>{
-// This block will prevent the bot from responding to itself and other bots
-	if(msg.author.bot) {
-		return
-}
-
 client.on('ready', () => {
  client.user.setActivity("!nitro");
  console.log("Bot ("+client.user.tag+") Ready!");
