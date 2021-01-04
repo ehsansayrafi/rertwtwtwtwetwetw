@@ -39,7 +39,7 @@ client.on('message', message => {
 
 client.on('message', message => {
 	if (message.content === "!invite") {
-		message.channel.send("متاسفم زرگ خان ما اینوایت نداریم این یه بات کاملا شخصیه 😉");
+		message.channel.send("متاسفم زرنگ خان ما اینوایت نداریم این یه بات کاملا شخصیه 😉");
 	}
 });
  
