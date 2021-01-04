@@ -18,7 +18,7 @@ var channel = client.channels.get('682015187947225097');
 */
 
 client.dispatcher.addInhibitor(msg => {
-  return (msg.channel.name == "!nitro"); //you return whether the command should be blocked
+  return (msg.channel.name == "blockme"); //you return whether the command should be blocked
 })
 
 client.on('ready', () => {
