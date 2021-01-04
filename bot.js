@@ -9,7 +9,6 @@ client.on('ready', () => {
 
 client.on('message', async message => {
 if (message.author.bot || message.channel.type == "dm") return;
-
 })
 
 client.on('message', message => {
