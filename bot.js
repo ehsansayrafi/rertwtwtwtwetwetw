@@ -18,7 +18,7 @@ var channel = client.channels.get('682015187947225097');
 */
 
 client.on('ready', () => {
- client.user.setActivity("!nitro | FranXX : https://discord.gg/bJBpMvv8rM ");
+ client.user.setActivity("!nitro");
  console.log("Bot ("+client.user.tag+") Ready!");
  });
 
