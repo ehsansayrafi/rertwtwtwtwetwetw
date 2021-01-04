@@ -6,14 +6,6 @@ client.on('ready', () => {
  client.user.setActivity("!nitro");
  console.log("Bot ("+client.user.tag+") Ready!");
  });
-
-client.on("message", msg =>  { 
-    
-   if(msg.guild==null &&msg.author.id!=='botDiscordId'){
-    msg.reply('dosomethinghere')
-   }
-});
-
 })
 
 client.on('message', message => {
