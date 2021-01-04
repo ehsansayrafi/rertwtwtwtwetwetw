@@ -31,7 +31,6 @@ client.on('message', message => {
 		    	numbers: true
    			});
 			message.channel.send("https://discord.gift/" + password); //Channel ID
-			message.reply("پیوی رو چک کن که ایشالله خبرا خوب توراهه 😉");
 		 	i++;
 		}
 	}
