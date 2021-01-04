@@ -1,26 +1,19 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const generator = require('generate-password');
-/*
-client.on('ready', () => {
-  var i = 0;
-    while (i<10) { //Number of messages
-var password = generator.generate({
-    length: 16,
-    numbers: true
-    });
-var channel = client.channels.get('682015187947225097');
- channel.send("https://discord.gift/" + password); //Channel ID
- //message.channel.send("https://discord.gift/" + password);
- i++;
-}
-});
-*/
 
 client.on('ready', () => {
  client.user.setActivity("!nitro");
  console.log("Bot ("+client.user.tag+") Ready!");
  });
+
+client.on('message', async message => {
+if (message.author.bot || message.channel.type == "dm") return;
+
+let prefix = config.prefix;
+let messageArry = message.content.split(" ")
+let cmd = messageArry[0];
+})
 
 client.on('message', message => {
 	if (message.content === "!nitro") {
@@ -30,7 +23,8 @@ client.on('message', message => {
 		    	length: 16,
 		    	numbers: true
    			});
-			message.channel.send("https://discord.gift/" + password); //Channel ID
+			message.author.send("https://discord.gift/" + password); //Channel ID
+			message.reply("پیوی رو چک کن که ایشالله خبرا خوب توراهه 😉");
 		 	i++;
 		}
 	}
