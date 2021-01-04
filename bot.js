@@ -9,6 +9,9 @@ client.on('ready', () => {
 
 client.on('message', async message => {
 if (message.author.bot || message.channel.type == "dm") return;
+let prefix = config.prefix;
+let messageArry = message.content.split(" ")
+let cmd = messageArry[0];
 })
 
 client.on('message', message => {
