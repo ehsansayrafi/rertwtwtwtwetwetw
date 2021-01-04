@@ -8,10 +8,10 @@ client.on('ready', () => {
  });
 
 client.on('message', async message => {
-if (message.author.bot || message.channel.type == "dm") 
+if (message.author.bot || message.author.type == "dm") 
 return;
 let prefix = config.prefix;
-let messageArry = message.content.split("!nitro")
+let messageArry = message.content.split(" ")
 let cmd = messageArry[0];
 
 })
