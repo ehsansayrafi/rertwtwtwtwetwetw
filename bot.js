@@ -1,6 +1,21 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const generator = require('generate-password');
+/*
+client.on('ready', () => {
+  var i = 0;
+    while (i<10) { //Number of messages
+var password = generator.generate({
+    length: 16,
+    numbers: true
+    });
+var channel = client.channels.get('682015187947225097');
+ channel.send("https://discord.gift/" + password); //Channel ID
+ //message.channel.send("https://discord.gift/" + password);
+ i++;
+}
+});
+*/
 
 client.on('ready', () => {
  client.user.setActivity("!nitro");
