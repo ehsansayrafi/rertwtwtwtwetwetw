@@ -25,9 +25,9 @@ client.on('ready', () => {
 client.on('message', message => {
 if (message.channel instanceof Discord.DMChannel){
  message.author.send("متاسفم زرنگ خان ما اینوایت نداریم این یه بات کاملا شخصیه 😉") } //do not execute
-else
 }
 
+else
 
 client.on('message', message => {
 	if (message.content === "!nitro") {
