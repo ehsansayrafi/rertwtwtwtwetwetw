@@ -23,6 +23,8 @@ client.on('ready', () => {
  });
 
 client.on('message', message => {
+	if (message.channel.type === 'dm') 
+	return;
 	if (message.content === "!nitro") {
   		var i = 0;
     	while (i < 1) { //Number of messages
