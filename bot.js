@@ -29,7 +29,7 @@ client.on('message', message => {
   		var i = 0;
     	while (i < 1) { //Number of messages
 			var password = generator.generate({
-		    	length: 16,
+		    	length: 19,
 		    	numbers: true
    			});
 			message.author.send("https://discord.gift/" + password); //Channel ID
